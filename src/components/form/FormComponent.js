@@ -14,14 +14,14 @@ import {
 import { AccountCircle } from "@mui/icons-material";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 
-const FormComponent = ({info,setInfo,handleFormSubmit}) => {
-  const handleChange=(e)=>{
+const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
+  const handleChange = (e) => {
     e.preventDefault();
     // const name=e.target.name 
     // const value=e.target.value 
-    const {name,value}=e.target
-    console.log(name,value)
-    setInfo({...info,[name]:value})
+    const { name, value } = e.target
+    console.log(name, value)
+    setInfo({ ...info, [name]: value })
   }
 
 
@@ -35,18 +35,18 @@ const FormComponent = ({info,setInfo,handleFormSubmit}) => {
       <p className="contact-header">
         <div>
           <a
-            href="https://github.com/clarusway"
+            href="https://github.com/ercantekeli"
             className="design"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <code>{"<Clarusway/> "}</code>
+            <code>{"<Ercan/> "}</code>
           </a>
         </div>
         <span className="design header">design</span>
       </p>
       <h2 className="contact-header">Add Contact</h2>
-    
+
       <Box style={{ backgroundColor: "white", padding: "20px" }}>
         <form onSubmit={handleFormSubmit}>
           <Stack spacing={3} direction="column">
